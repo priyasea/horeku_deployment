@@ -31,21 +31,12 @@ def predict():
     return render_template('predict.html' , predict = f'the person is {ans}' )
 
 
-    ##return render_template('predct_obs.html', predict = f'the person is {ans}')
+    
 
-
-#@app.route('/predict' , methods = ['post'])
-#def predict():
-  #  first_name  = request.form.get('fname')
-   # last_name  = request.form.get('lname')
-   # email_name  = request.form.get('email')
-    #phone_no  = request.form.get('phone')
-    #print(first_name)
-    #print(last_name)
-    #print( email_name )
-    #print(phone_no)
-    #return 'Form Submitted'
 
 
 #run the app
-app.run(debug=True)
+if __name__ == '__main__': 
+    app.run()
+
+
